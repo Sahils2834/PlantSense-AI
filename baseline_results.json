@@ -1,0 +1,30 @@
+{
+    "yolo11n": {
+        "mAP50": 0.0,
+        "mAP50-95": 0.0,
+        "precision": NaN,
+        "recall": NaN,
+        "f1": NaN
+    },
+    "yolo12n": {
+        "mAP50": 0.0,
+        "mAP50-95": 0.0,
+        "precision": NaN,
+        "recall": NaN,
+        "f1": NaN
+    },
+    "yolo26n": {
+        "mAP50": 0.0,
+        "mAP50-95": 0.0,
+        "precision": NaN,
+        "recall": NaN,
+        "f1": NaN
+    },
+    "ensemble": {
+        "mAP50": 0.0,
+        "mAP50-95": 0.0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+    }
+}

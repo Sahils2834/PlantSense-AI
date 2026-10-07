@@ -1,0 +1,217 @@
+# =========================================================
+# PlantSense AI - Git Ignore
+# =========================================================
+
+# ---------------------------------------------------------
+# Environment Variables / Secrets
+# ---------------------------------------------------------
+.env
+.env.*
+!.env.example
+
+# API keys / credentials
+*.pem
+*.key
+secrets/
+secrets.json
+credentials.json
+
+# ---------------------------------------------------------
+# Python
+# ---------------------------------------------------------
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+
+# Python cache
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# ---------------------------------------------------------
+# Virtual Environments
+# ---------------------------------------------------------
+venv/
+.venv/
+env/
+ENV/
+
+# ---------------------------------------------------------
+# Python / Jupyter
+# ---------------------------------------------------------
+.ipynb_checkpoints/
+
+# ---------------------------------------------------------
+# Databases / Local Storage
+# ---------------------------------------------------------
+*.db
+*.sqlite
+*.sqlite3
+
+backend/storage/
+!backend/storage/.gitkeep
+
+# Uploaded files
+uploads/
+uploaded_files/
+storage/uploads/
+storage/results/
+
+# ---------------------------------------------------------
+# Machine Learning Models
+# ---------------------------------------------------------
+# Do not upload large trained model weights
+*.pt
+*.pth
+*.onnx
+*.weights
+*.safetensors
+*.ckpt
+
+# Model cache
+models/
+model_cache/
+
+# Keep model directory structure if needed
+!models/.gitkeep
+
+# ---------------------------------------------------------
+# YOLO / Ultralytics Training Outputs
+# ---------------------------------------------------------
+runs/
+runs/detect/
+runs/classify/
+runs/segment/
+runs/pose/
+
+# Training checkpoints
+weights/
+checkpoints/
+
+# ---------------------------------------------------------
+# ML Experiments
+# ---------------------------------------------------------
+backend/experiments/
+experiments/
+logs/
+*.log
+
+# TensorBoard
+runs/
+tensorboard/
+events.out.tfevents.*
+
+# ---------------------------------------------------------
+# Dataset
+# ---------------------------------------------------------
+# Do not upload the complete dataset to GitHub
+dataset/images/
+dataset/labels/
+dataset/train/
+dataset/val/
+dataset/test/
+
+datasets/
+data/raw/
+data/processed/
+
+# Keep dataset configuration files
+!dataset/data.yaml
+!dataset/dataset.yaml
+!datasets/data.yaml
+
+# ---------------------------------------------------------
+# Generated ML Results
+# ---------------------------------------------------------
+predictions/
+prediction_results/
+evaluation_results/
+reports/generated/
+
+*.csv
+*.json
+
+# IMPORTANT:
+# If you have important committed JSON configuration files,
+# add exceptions below.
+!baseline_results.json
+
+# ---------------------------------------------------------
+# Frontend - Node
+# ---------------------------------------------------------
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# ---------------------------------------------------------
+# Frontend Build
+# ---------------------------------------------------------
+dist/
+build/
+.vite/
+.cache/
+
+frontend/dist/
+frontend/.vite/
+
+# ---------------------------------------------------------
+# Vite
+# ---------------------------------------------------------
+*.local
+
+# ---------------------------------------------------------
+# Coverage
+# ---------------------------------------------------------
+coverage/
+.nyc_output/
+
+# ---------------------------------------------------------
+# IDE
+# ---------------------------------------------------------
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# ---------------------------------------------------------
+# OS
+# ---------------------------------------------------------
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# ---------------------------------------------------------
+# Temporary Files
+# ---------------------------------------------------------
+*.tmp
+*.temp
+*.bak
+*.old
+*.orig
+
+# ---------------------------------------------------------
+# Generated Images / Videos
+# ---------------------------------------------------------
+*.mp4
+*.mov
+*.avi
+*.mkv
+*.webm
+
+# Generated prediction images
+*_pred.jpg
+*_pred.png
+*_labels.jpg
+*_labels.png
+
+# ---------------------------------------------------------
+# Documentation generated files
+# ---------------------------------------------------------
+*.docx
+*.pdf
